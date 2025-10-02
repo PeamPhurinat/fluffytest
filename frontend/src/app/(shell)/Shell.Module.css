@@ -1,10 +1,23 @@
-.sidebar {
-  width: var(--sidebar-w);
-  background: var(--sidebar-bg);
-  border-right: 1px solid #e0ded7;
+.app {
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
+  background: #f8f9fa; /* light gray background */
 }
+
+.sidebar {
+  width: 240px;
+  background: #f4f1ea; /* beige color */
+  padding: 1rem;
+  border-right: 1px solid #e0ded7;
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
 
 .brand {
   font-weight: 700;
